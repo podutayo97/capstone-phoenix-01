@@ -15,7 +15,7 @@ ssh-keygen -t ed25519 -f ~/.ssh/capstone-phoenix -C "capstone-phoenix" -N ""
 ## 1. Clone repo
 
 ```bash
-git clone https://github.com/tesddev/capstone-phoenix.git
+git clone https://github.com/podutayo97/capstone-phoenix-01.git
 cd capstone-phoenix
 ```
 

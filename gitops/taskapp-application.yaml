@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/tesddev/capstone-phoenix.git
+    repoURL: https://github.com/podutayo97/capstone-phoenix-01.git
     targetRevision: main
     path: manifests/taskapp
   destination:

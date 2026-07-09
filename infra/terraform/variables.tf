@@ -68,6 +68,6 @@ variable "default_tags" {
   default = {
     Project   = "capstone-phoenix"
     ManagedBy = "terraform"
-    Owner     = "tesddev"
+    Owner     = "podutayo97"
   }
 }

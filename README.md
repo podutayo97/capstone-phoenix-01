@@ -8,7 +8,7 @@ This repository provisions and deploys TaskApp on a real multi-node Kubernetes c
 - Region: `eu-west-1`
 - Cluster: k3s
 - Nodes: 1 control-plane + 2 workers
-- Domain: `taskapp-tesleem.duckdns.org`
+- Domain: `taskapp-olaseni.duckdns.org`
 - TLS: cert-manager + Let's Encrypt HTTP-01
 - Ingress: ingress-nginx installed with Helm
 - GitOps: Argo CD
