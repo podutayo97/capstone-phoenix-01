@@ -9,23 +9,23 @@ resource "aws_security_group" "k3s" {
 }
 
 resource "aws_vpc_security_group_ingress_rule" "ssh_admin" {
-  for_each           = toset(var.admin_cidrs)
-  security_group_id  = aws_security_group.k3s.id
-  description        = "SSH from admin IP ${each.value}"
-  cidr_ipv4          = each.value
-  from_port          = 22
-  to_port            = 22
-  ip_protocol        = "tcp"
+  for_each          = toset(var.admin_cidrs)
+  security_group_id = aws_security_group.k3s.id
+  description       = "SSH from admin IP ${each.value}"
+  cidr_ipv4         = each.value
+  from_port         = 22
+  to_port           = 22
+  ip_protocol       = "tcp"
 }
 
 resource "aws_vpc_security_group_ingress_rule" "k8s_api_admin" {
-  for_each           = toset(var.admin_cidrs)
-  security_group_id  = aws_security_group.k3s.id
-  description        = "Kubernetes API from admin IP ${each.value}"
-  cidr_ipv4          = each.value
-  from_port          = 6443
-  to_port            = 6443
-  ip_protocol        = "tcp"
+  for_each          = toset(var.admin_cidrs)
+  security_group_id = aws_security_group.k3s.id
+  description       = "Kubernetes API from admin IP ${each.value}"
+  cidr_ipv4         = each.value
+  from_port         = 6443
+  to_port           = 6443
+  ip_protocol       = "tcp"
 }
 
 resource "aws_vpc_security_group_ingress_rule" "http_world" {
